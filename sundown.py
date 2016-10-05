@@ -19,17 +19,16 @@ def sunset():
 
 
 def timeNow():
-    
     nowFull = datetime.now().time()
     now = nowFull.strftime('%H:%M:%S.%2f')
     return now[:-3]
 
 
 def parseJsonTime(s):
-    slist = s
+    slist = s[:-3]
     if(s[-2:] == 'PM'):
         x = int(s[:1]) + 12
-        slist = str(x) + s[1:]  # Credits to @Tairoman.
+        slist = str(x) + s[1:-3]  # Credits to @Tairoman.
     return slist                # He is 420 friendly.
 
 

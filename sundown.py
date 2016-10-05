@@ -1,11 +1,11 @@
-# requires "requests"
 import requests
-import json
 from datetime import datetime
+
+timeurl = 'http://api.sunrise-sunset.org/json?lat=36.720160x0&lng=-4.4203400&date=today'
 
 
 def getStats():
-    jsonSunStats = requests.get('http://api.sunrise-sunset.org/json?lat=36.720160x0&lng=-4.4203400&date=today').json()
+    jsonSunStats = requests.get(timeurl).json()
     results = jsonSunStats['results']
     return results
 

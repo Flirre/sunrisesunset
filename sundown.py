@@ -28,8 +28,8 @@ def parseJsonTime(s):
     slist = s[:-3]
     if(s[-2:] == 'PM'):
         x = int(s[:1]) + 12
-        slist = str(x) + s[1:-3]  # Credits to @Tairoman.
-    return slist                # He is 420 friendly.
+        slist = str(x) + s[1:-3]  # Credits to @tairoman.
+    return slist                  # He is 420 friendly.
 
 
 # print(sunrise())

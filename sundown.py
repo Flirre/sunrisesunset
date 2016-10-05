@@ -21,7 +21,7 @@ def sunset():
 def timeNow():
     nowFull = datetime.now().time()
     now = nowFull.strftime('%H:%M:%S.%2f')
-    return now[:-3]
+    return now[:-4]
 
 
 def parseJsonTime(s):

@@ -25,8 +25,16 @@ def timeNow():
     return now[:-3]
 
 
-def parseTime(s):
-    
-print(sunrise())
-print(sunset())
-print(timeNow())
+def parseJsonTime(s):
+    slist = s
+    if(s[-2:] == 'PM'):
+        x = int(s[:1]) + 12
+        slist = str(x) + s[1:]  # Credits to @Tairoman.
+    return slist                # He is 420 friendly.
+
+
+# print(sunrise())
+# print(sunset())
+# print(timeNow())
+
+print(parseJsonTime(sunrise()))

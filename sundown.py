@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime
+import datetime
 
 timeurl = 'http://api.sunrise-sunset.org/json?lat=36.720160x0&lng=-4.4203400&date=today'
 

@@ -19,10 +19,9 @@ def sunset():
 
 
 def timeNow():
-    nowFull = datetime.now().time()
-    now = nowFull.strftime('%H:%M:%S.%2f')
-    return now[:-4]
-
+    nowFull = datetime.datetime.now()
+    nowFull = nowFull.replace(year=1900, month=1, day=1) # scrub away the year for comparison
+    return nowFull
 
 def parseJsonTime(s):
     slist = s[:-3]

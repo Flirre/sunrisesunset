@@ -2,7 +2,7 @@ import requests
 import datetime
 # this program uses an API from http://sunrise-sunset.org/api
 
-timeurl = 'http://api.sunrise-sunset.org/json?lat=57.708870&lng=11.974560-4.4203400&date=today' # might need adjustment for DST(sommartid)
+timeurl = 'http://api.sunrise-sunset.org/json?lat=57.708870&lng=11.974560&date=today' # might need adjustment for DST(sommartid)
 
 
 def getStats():

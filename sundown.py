@@ -1,5 +1,6 @@
 import requests
 import datetime
+# this program uses an API from http://sunrise-sunset.org/api
 
 timeurl = 'http://api.sunrise-sunset.org/json?lat=36.720160x0&lng=-4.4203400&date=today'
 
@@ -38,4 +39,4 @@ def lightout():
     return (nowTime >= sunriseTime and nowTime <= sunsetTime)
 
 
-print(lightout())
+lightout()
